@@ -5,7 +5,7 @@ output:
   md_document:
     variant: markdown_github
     toc: yes
-    toc_depth: 4
+    toc_depth: 5
 ---
 
 
@@ -25,8 +25,8 @@ output:
 
 ## Spatial / Maps
 
-  * Topographic map  
-    [![](figures/topomap.png)](http://github.com/Pakillo/R-figures/blob/master/Spatial/topomap.Rmd)
+### Topographic map  
+  [![](figures/topomap.png)](http://github.com/Pakillo/R-figures/blob/master/Spatial/topomap.Rmd)
 
 
 

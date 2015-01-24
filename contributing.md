@@ -16,9 +16,9 @@ You can also use http://htmlpreview.github.io to view the source code and the re
 
 4. Open `README.Rmd` and include your figure in the appropriate section: just write a short caption and include the final figure with a link to the source code, like this:
 
-  `* Topographic map with contour lines`
+`#### Topographic map with contour lines`
 
-    ` [![](figures/your_figure_name.png)](http://github.com/Pakillo/R-figures/blob/master/your_theme/your_figure_name.Rmd) `
+`[![](figures/your_figure_name.png)](http://github.com/Pakillo/R-figures/blob/master/your_theme/your_figure_name.Rmd)`
     
 5. Knit `README.Rmd` to markdown (`README.md`).
     
