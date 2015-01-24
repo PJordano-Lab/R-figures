@@ -18,7 +18,7 @@ You can also use http://htmlpreview.github.io to view the source code and the re
 
   `* Topographic map with contour lines`
 
-    ` [![](figures/your_figure_name.png)](http://github.com/Pakillo/R-figures/theme/your_figure_name.Rmd) `
+    ` [![](figures/your_figure_name.png)](http://github.com/Pakillo/R-figures/tree/master/your_theme/your_figure_name.Rmd) `
     
 5. Knit `README.Rmd` to markdown (`README.md`).
     
