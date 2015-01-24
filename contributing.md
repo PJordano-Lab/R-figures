@@ -1,9 +1,9 @@
 
 ## How to use this repository
 
-You can just browse the figures available [here](http://github.com/Pakillo/R-figures/README.md). If you click on any figure, it will take you to the source code (Rmarkdown) used to produce it.
+You can just browse the figures available [here](http://github.com/Pakillo/R-figures). If you click on any figure, it will take you to the source code (Rmarkdown) used to produce it.
 
-You can also use http://htmlpreview.github.io to view the source code and the resulting graphic in a single html file (e.g. http://htmlpreview.github.io/?https://raw.github.com/Pakillo/R-figures/Spatial/topomap.html)
+You can also use http://htmlpreview.github.io to view the source code and the resulting graphic in a single html file (e.g. http://htmlpreview.github.io/?https://raw.github.com/Pakillo/R-figures/tree/master/Spatial/topomap.html)
 
 
 ### To contribute:
