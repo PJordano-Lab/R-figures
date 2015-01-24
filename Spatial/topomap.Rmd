@@ -1,0 +1,60 @@
+---
+title: "Coloured topographic map with contour lines"
+author: "Francisco Rodriguez-Sanchez"
+date: "Saturday, January 24, 2015"
+output: html_document
+---
+
+1. Load packages
+```{r message=FALSE}
+library(dismo)
+```
+
+
+2. Get elevation data from the internet for specified coordinates
+```{r message=FALSE}
+elev <- getData("SRTM", download=T, lon=-76.6, lat=18.1)
+```
+
+
+ 
+3. Specify desired extent
+
+```{r}
+ext <- c(-76.68, -76.65, 18.08, 18.11)
+ext2 <- c(-76.675, -76.655, 18.088, 18.10) # for plotting
+```
+
+ 
+4. Crop raster to desired extent
+```{r}
+ele <- crop(elev, ext)
+```
+
+
+ 
+ 
+5. Hillshading
+```{r}
+slope <- terrain(ele, opt = "slope")
+aspect <- terrain(ele, opt = "aspect")
+hill <- hillShade(slope, aspect, 40, 180)
+```
+
+
+ 
+6. Plot map
+```{r}
+plot(hill, col = grey(0:100/100), legend = FALSE, interpolate=T,
+xlim=ext2[1:2], ylim=ext2[3:4],
+axes=F, box=F)
+plot(ele, col=topo.colors(16), alpha = 0.5, add = T, interpolate=T,
+xlim=ext2[1:2], ylim=ext2[3:4], legend=F)
+contour(crop(ele, ext2), levels=seq(1000, 2000, 50), add=T)
+axis(1, at=ext2[1:2])
+axis(2, at=c(ext2[3]+0.0004, ext2[4]), pos=ext2[1], las=1) 
+```
+
+
+
+
