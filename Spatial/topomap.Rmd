@@ -57,4 +57,11 @@ axis(2, at=c(ext2[3]+0.0004, ext2[4]), pos=ext2[1], las=1)
 
 
 
+##### Session info
+
+```{r sessionInfo, echo=FALSE}
+sessionInfo()
+```
+
+
 

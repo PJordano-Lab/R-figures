@@ -11,6 +11,11 @@ You can also use http://htmlpreview.github.io to view the source code and the re
 1. **Pull** the latest version of this repository from GitHub.
 
 2. Place a copy of the Rmarkdown document and the resulting HTML file (after knitting) in the appropriate folder (e.g. Spatial, Networks...). If needed, include also a minimal dataset to make the example reproducible (e.g. `topomap_data.rda` to accompany `topomap.Rmd` and `topomap.html`).
+**Important**: always include a final chunk in the `Rmarkdown` file to provide session info, like this:
+`##### Session info  
+```{r sessionInfo, echo=FALSE}  
+sessionInfo()  
+````  
 
 3. Put a copy of your resulting figure (e.g. `topomap.png`) in the `figures` folder of the main repository.
 
