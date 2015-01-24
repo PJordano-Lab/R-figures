@@ -16,6 +16,8 @@ output:
 
 ## Multipanel plots 
 
+#### ggplot slopegraph multipanel
+  [![](figures/slopegraph_multipanel.png)](http://github.com/Pakillo/R-figures/blob/master/Multipanel/slopegraph_multipanel.Rmd)
 
 
 

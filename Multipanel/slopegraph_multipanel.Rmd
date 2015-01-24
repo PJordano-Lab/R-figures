@@ -1,0 +1,46 @@
+---
+title: "ggplot slopegraph of species abundance changes over time"
+author: "Francisco Rodriguez-Sanchez"
+output: html_document
+---
+
+
+#### Load and prepare dataset
+
+```{r load_data, echo=TRUE, comment=NA}
+
+load("dataset.rda")
+
+# select treatments
+dataplot <- dataset[dataset$treatment %in% c("W", "L", "N", "WL", "WN", "LN", "WLN"), ]
+
+```
+
+
+#### Produce plot
+
+
+```{r ggplot, fig.align='center', fig.height=11.5, fig.width=8.5}
+
+library(ggplot2)
+
+ggplot(dataplot, aes(x = year, y = cover, colour=treatment, group = plot)) + 
+  facet_wrap(~spnames) +
+  geom_line() + geom_point(size=2) +
+  theme_bw() + theme(legend.title=element_blank()) +
+  ylab("Plant cover (%)") + xlab("Year") +
+  scale_colour_discrete(breaks=c("W", "L", "N", "WL", "WN", "LN", "WLN"))
+
+```
+
+
+
+##### Session info
+
+```{r sessionInfo, echo=FALSE}
+sessionInfo()
+```
+
+
+
+
