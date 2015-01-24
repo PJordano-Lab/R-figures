@@ -17,7 +17,7 @@ Time series
 Spatial / Maps
 --------------
 
-### Topographic map
+#### Topographic map
 
 [![](figures/topomap.png)](http://github.com/Pakillo/R-figures/blob/master/Spatial/topomap.Rmd)
 
