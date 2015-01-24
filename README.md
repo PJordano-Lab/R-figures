@@ -17,7 +17,7 @@ Spatial / Maps
 --------------
 
 -   Topographic map
-    [![](figures/topomap.png)](http://github.com/Pakillo/R-figures/tree/master/Spatial/topomap.Rmd)
+    [![](figures/topomap.png)](http://github.com/Pakillo/R-figures/blob/master/Spatial/topomap.Rmd)
 
 Networks
 --------
