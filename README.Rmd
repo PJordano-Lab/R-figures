@@ -1,0 +1,40 @@
+---
+Title: "A repository of R graphics with their associated code"
+Author: "IEG"
+output:
+  md_document:
+    variant: markdown_github
+    toc: yes
+    toc_depth: 3
+---
+
+
+## General stats
+
+
+
+
+## Multipanel plots 
+
+
+
+
+## Time series
+
+
+
+## Spatial / Maps
+
+  * Topographic map  
+    [![](figures/topomap.png)](http://github.com/Pakillo/R-figures/Spatial/topomap.Rmd)
+
+
+
+
+## Networks
+
+
+
+
+Licence: 
+
