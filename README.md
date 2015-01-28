@@ -37,6 +37,9 @@ Networks
 
 [![](figures/effectiveness_plot.png)](http://github.com/Pakillo/R-figures/blob/master/Networks/effectiveness.Rmd)
 
+View the whole analysis [here](http://htmlpreview.github.io/?https://raw.github.com/Pakillo/R-figures/blob/master/Networks/effectiveness.html).
+More information on effectiveness landscapes is in [Pedro Jordano Lab Pages @GitHub](http://pedroj.github.io).
+
 Licence:
 --------
 
