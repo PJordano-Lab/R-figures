@@ -1,9 +1,9 @@
 
 ## How to use this repository
 
-You can just browse the figures available [here](http://github.com/Pakillo/R-figures). If you click on any figure, it will take you to the source code (Rmarkdown) used to produce it.
+You can just browse the figures available [here](https://github.com/PJordano-Lab/R-figures). If you click on any figure, it will take you to the source code used to produce it (actually an HTML report with the R code and the resulting graphic). The original Rmarkdown document is also available in the same repository.
 
-You can also use http://htmlpreview.github.io to view the source code and the resulting graphic in a single html file (e.g. http://htmlpreview.github.io/?https://raw.github.com/Pakillo/R-figures/blob/master/Spatial/topomap.html)
+You can also use http://htmlpreview.github.io to view the source code and the resulting graphic in a single html file (e.g. http://htmlpreview.github.io/?https://raw.github.com/PJordano-Lab/R-figures/blob/master/Spatial/topomap.html)
 
 
 ### To contribute:
@@ -19,7 +19,7 @@ You can also use http://htmlpreview.github.io to view the source code and the re
 
 `#### Topographic map with contour lines`
 
-`[![](figures/your_figure_name.png)](http://github.com/Pakillo/R-figures/blob/master/your_theme/your_figure_name.Rmd)`
+`[![](figures/your_figure_name.png)](http://github.com/PJordano-Lab/R-figures/blob/master/your_theme/your_figure_name.Rmd)`
     
 5. Knit `README.Rmd` to markdown (`README.md`).
     
