@@ -1,4 +1,5 @@
 -   General stats
+    -   Trying figinsert function
 -   Multipanel plots
     -   ggplot slopegraph multipanel
 -   Multivariate
@@ -13,6 +14,10 @@ This repository intends to be a catalog of figures made in [our group](http://eb
 
 General stats
 -------------
+
+#### Trying figinsert function
+
+    [![](figures/topomap.png)](http://htmlpreview.github.io/?https://raw.github.com/PJordano-Lab/R-figures/blob/master/Spatial/topomap.html)
 
 Multipanel plots
 ----------------

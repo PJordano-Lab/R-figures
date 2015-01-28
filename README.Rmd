@@ -12,7 +12,37 @@ This repository intends to be a catalog of figures made in [our group](http://eb
   
 
 
+```{r knitr_setup, include=FALSE, cache=FALSE}
+library(knitr)
+opts_chunk$set(echo = FALSE, comment = NA)
+```
+
+```{r fig_insert_function}
+fig_insert <- function(theme, figname){
+  if (missing(theme) | missing(figname)) {
+    cat("You must provide theme (e.g. Spatial, Networks) and figure name (e.g. topomap)")
+    } else {
+      cat("[![](figures/", figname, ".png)]",
+          "(http://htmlpreview.github.io/?https://raw.github.com/PJordano-Lab/R-figures/blob/master/",
+          theme, "/", figname, ".html)",
+          sep = "")
+      }
+  }
+```
+
+
+
+
+
 ## General stats
+
+#### Trying figinsert function
+```{r}
+fig_insert("Spatial", "topomap")
+```
+
+
+
 
 
 
