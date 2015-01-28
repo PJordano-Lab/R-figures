@@ -1,5 +1,4 @@
 -   General stats
-    -   Trying figinsert function
 -   Multipanel plots
     -   ggplot slopegraph multipanel
 -   Multivariate
@@ -14,10 +13,6 @@ This repository intends to be a catalog of figures made in [our group](http://eb
 
 General stats
 -------------
-
-#### Trying figinsert function
-
-[![](figures/topomap.png)](http://htmlpreview.github.io/?https://raw.github.com/PJordano-Lab/R-figures/blob/master/Spatial/topomap.html)
 
 Multipanel plots
 ----------------
@@ -44,7 +39,7 @@ Networks
 
 #### Plotting effectiveness landscapes
 
-[![](figures/effectiveness_plot.png)](http://htmlpreview.github.io/?https://raw.github.com/PJordano-Lab/R-figures/blob/master/Networks/effectiveness.html)
+[![](figures/effectiveness.png)](http://htmlpreview.github.io/?https://raw.github.com/PJordano-Lab/R-figures/blob/master/Networks/effectiveness.html)
 
 More information on effectiveness landscapes is in [Pedro Jordano Lab Pages @GitHub](<http://pedroj.github.io>).
 

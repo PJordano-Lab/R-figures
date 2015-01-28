@@ -36,7 +36,42 @@ fig_insert <- function(theme, figname){
 
 ## General stats
 
-#### Trying figinsert function
+
+
+
+
+
+## Multipanel plots 
+
+#### ggplot slopegraph multipanel
+```{r results='asis'}
+fig_insert("Multipanel", "slopegraph_multipanel")
+```
+
+
+
+
+
+
+## Multivariate
+
+
+
+
+
+
+
+## Time series
+
+
+
+
+
+
+
+## Spatial / Maps
+
+#### Topographic map  
 ```{r results='asis'}
 fig_insert("Spatial", "topomap")
 ```
@@ -47,35 +82,20 @@ fig_insert("Spatial", "topomap")
 
 
 
-## Multipanel plots 
-
-#### ggplot slopegraph multipanel
-  [![](figures/slopegraph_multipanel.png)](http://htmlpreview.github.io/?https://raw.github.com/PJordano-Lab/R-figures/blob/master/Multipanel/slopegraph_multipanel.html)
-
-
-## Multivariate
-
-
-
-## Time series
-
-
-
-## Spatial / Maps
-
-#### Topographic map  
-  [![](figures/topomap.png)](http://htmlpreview.github.io/?https://raw.github.com/PJordano-Lab/R-figures/blob/master/Spatial/topomap.html)
-
-
-
-
 ## Networks
 
 #### Plotting effectiveness landscapes
-
-[![](figures/effectiveness_plot.png)](http://htmlpreview.github.io/?https://raw.github.com/PJordano-Lab/R-figures/blob/master/Networks/effectiveness.html)
+```{r results='asis'}
+fig_insert("Networks", "effectiveness")
+```
 
 More information on effectiveness landscapes is in [Pedro Jordano Lab Pages @GitHub](http://pedroj.github.io).
+
+
+
+
+
+
 
 
 Licence:
