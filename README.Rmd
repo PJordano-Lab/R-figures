@@ -38,6 +38,10 @@ This repository intends to be a catalog of figures with the associated R code we
 
 ## Networks
 
+#### Plotting effectiveness landscapes
+
+[![](figures/effectiveness_plot.png)](http://github.com/Pakillo/R-figures/blob/master/Networks/effectiveness.Rmd)
+
 
 
 
