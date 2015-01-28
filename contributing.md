@@ -18,7 +18,7 @@ You can just browse the figures available [here](https://github.com/PJordano-Lab
 `#### Topographic map with contour lines`  
 `{r results='asis'}`   
 `fig_insert("Spatial", "topomap")`  
-```
+`
 
 where "Spatial" is the general theme of your figure (e.g. Spatial, Networks, etc), and "topomap" is the name of your figure.
     
