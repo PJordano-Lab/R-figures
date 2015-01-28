@@ -37,7 +37,7 @@ fig_insert <- function(theme, figname){
 ## General stats
 
 #### Trying figinsert function
-```{r}
+```{r results='asis'}
 fig_insert("Spatial", "topomap")
 ```
 

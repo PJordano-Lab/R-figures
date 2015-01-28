@@ -17,7 +17,7 @@ General stats
 
 #### Trying figinsert function
 
-    [![](figures/topomap.png)](http://htmlpreview.github.io/?https://raw.github.com/PJordano-Lab/R-figures/blob/master/Spatial/topomap.html)
+[![](figures/topomap.png)](http://htmlpreview.github.io/?https://raw.github.com/PJordano-Lab/R-figures/blob/master/Spatial/topomap.html)
 
 Multipanel plots
 ----------------
