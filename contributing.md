@@ -15,12 +15,9 @@ You can just browse the figures available [here](https://github.com/PJordano-Lab
 
 4. Open `README.Rmd` and include your figure in the appropriate section: just write a short caption (4 hash symbols (####) followed by the figure title) and then include a knitr chunk like in this example:
 
-`#### Topographic map with contour lines`
-
-```{r results='asis'} 
-
-fig_insert("Spatial", "topomap")
-
+`#### Topographic map with contour lines`  
+`{r results='asis'}`   
+`fig_insert("Spatial", "topomap")`  
 ```
 
 where "Spatial" is the general theme of your figure (e.g. Spatial, Networks, etc), and "topomap" is the name of your figure.
