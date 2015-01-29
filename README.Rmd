@@ -14,7 +14,7 @@ This repository intends to be a catalog of figures made in [our group](http://eb
 
 ```{r knitr_setup, include=FALSE, cache=FALSE}
 library(knitr)
-opts_chunk$set(echo = FALSE, comment = NA)
+opts_chunk$set(echo = FALSE, comment = NA, results = 'asis')
 ```
 
 ```{r fig_insert_function}
@@ -44,7 +44,7 @@ fig_insert <- function(theme, figname){
 ## Multipanel plots 
 
 #### ggplot slopegraph multipanel
-```{r results='asis'}
+```{r}
 fig_insert("Multipanel", "slopegraph_multipanel")
 ```
 
@@ -72,7 +72,7 @@ fig_insert("Multipanel", "slopegraph_multipanel")
 ## Spatial / Maps
 
 #### Topographic map  
-```{r results='asis'}
+```{r}
 fig_insert("Spatial", "topomap")
 ```
 
@@ -85,7 +85,7 @@ fig_insert("Spatial", "topomap")
 ## Networks
 
 #### Plotting effectiveness landscapes
-```{r results='asis'}
+```{r}
 fig_insert("Networks", "effectiveness")
 ```
 
