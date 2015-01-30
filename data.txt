@@ -1,0 +1,35 @@
+# Prunus mahaleb frugivore assemblage. Jordano & Schupp (2000) Ecological Monographs.
+# Visitation data come from 107.3 h direct watches.
+# abundance-          Mean no. birds censused/km, averaged for two study years.
+# visits-             Mean no. visitis recorded to fruiting trees (/10 h).
+# prop_visits-        Proportion of total visits recorded (feeding records) contributed by species. Relative to the total no. records in two study years.
+# eff_per_vis-        Mean no. fruits swallowed per visit (successfully dispersed seeds).
+# eff_total-          Visit rate * eff_per_vis*prop fruits swallowed
+# prop_disp_service-  Proportion of total dispersal service contributed by species.
+#
+dataset	plant	animal	group	abundance	visits	prop_visits	eff_per_vis	eff_total	prop_disp_service	frugivore_species
+jordano_schupp	pmaha	CPAL	Large birds	0.45	0.01	0.0025	22.4	0.2240	0.00147	Columba palumbus
+jordano_schupp	pmaha	CCOR	Large birds	0.65	0.005	0.0011	12.0	0.0600	0.00039	Corvus_corone
+jordano_schupp	pmaha	DMAJ	Large birds	2.00	0.25	0.0014	5.0	1.2500	0.00820	Dendrocopos major
+jordano_schupp	pmaha	ERUB	Small muscicapids	6.05	3.5	0.0715	1.9	6.6500	0.04363	Erithacus rubecula
+jordano_schupp	pmaha	FHYP	Small muscicapids	0.20	0.005	0.0003	1.0	0.0050	0.00003	Ficedula hypoleuca
+jordano_schupp	pmaha	MSTR	Small muscicapids	0.10	0.005	0.0003	1.0	0.0050	0.00003	Muscicapa striata
+jordano_schupp	pmaha	POCH	Small muscicapids	22.80	10.85	0.2130	1.8	17.3140	0.45563	Phoenicurus ochruros
+jordano_schupp	pmaha	PPHO	Small muscicapids	3.50	1.47	0.0245	2.4	3.4010	0.02231	Phoenicurus phoenicurus
+jordano_schupp	pmaha	SATR	Warblers	1.60	0.64	0.0117	3.8	2.3104	0.01516	Sylvia atricapilla
+jordano_schupp	pmaha	SBOR	Warblers	0.20	0.11	0.0032	4.0	0.4400	0.00289	Sylvia borin
+jordano_schupp	pmaha	SCAN	Warblers	0.90	0.61	0.0210	2.9	0.9416	0.00618	Sylvia cantillans
+jordano_schupp	pmaha	SCOM	Warblers	7.70	2.63	0.0526	2.8	5.8873	0.03862	Sylvia communis
+jordano_schupp	pmaha	SCON	Warblers	0.10	0.005	0.0007	2.1	0.0019	0.00001	Sylvia conspicillata
+jordano_schupp	pmaha	SMEL	Warblers	1.25	0.005	0.0059	2.0	0.0075	0.00005	Sylvia melanocephala
+jordano_schupp	pmaha	TMER	Thrushes	10.10	2.82	0.0802	6.5	17.8070	0.11682	Turdus merula
+jordano_schupp	pmaha	TVIS	Thrushes	12.50	9.23	0.1698	9.7	89.5362	0.58740	Turdus viscivorus
+jordano_schupp	pmaha	GGLA	Large birds	2.20	1.76	0.0238	6.9	1.6807	0.01103	Garrulus glandarius
+jordano_schupp	pmaha	PATE	Others	5.85	4.67	0.0747	1.9	0.9745	0.00639	Parus ater
+jordano_schupp	pmaha	SEUR	Others	1.25	0.48	0.0098	2.5	0.4800	0.00315	Sitta europaea
+jordano_schupp	pmaha	FCOE	Others	24.35	16.72	0.1921	3.4	3.4510	0.02264	Fringilla coelebs
+jordano_schupp	pmaha	PCAE	Others	1.55	2.51	0.0305	2.1	0.0000	0.00000	Parus caeruleus
+jordano_schupp	pmaha	PCRI	Others	0.55	0.24	0.0053	2.0	0.0000	0.00000	Parus cristatus
+jordano_schupp	pmaha	PMAJ	Others	0.70	0.65	0.0036	2.0	0.0000	0.00000	Parus major
+jordano_schupp	pmaha	SCIT	Others	0.40	0.005	0.0004	6.5	0.0000	0.00000	Serinus citrinella
+jordano_schupp	pmaha	SSER	Others	0.10	0.005	0.0004	3.0	0.0000	0.00000	Serinus serinus
