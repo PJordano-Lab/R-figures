@@ -6,6 +6,7 @@
     -   Topographic map
 -   Networks
     -   Plotting effectiveness landscapes
+    -   Assignements network
 -   Licence:
 
 This repository intends to be a catalog of figures with the associated R code we used to produce them. Scroll down to browse the available figures. Clicking on any of them will take you to the source code used to produce it.
@@ -36,6 +37,10 @@ Networks
 #### Plotting effectiveness landscapes
 
 [![](figures/effectiveness_plot.png)](http://github.com/Pakillo/R-figures/blob/master/Networks/effectiveness.Rmd)
+
+#### Assignements network
+
+[![](figures/assig_network.png)](http://github.com/Pakillo/R-figures/blob/master/Networks/assig_network.Rmd)
 
 Licence:
 --------

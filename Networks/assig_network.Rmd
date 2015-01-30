@@ -1,0 +1,79 @@
+---
+title: "Assignements network"
+author: "Pedro Jordano"
+date: "enero 19, 2015"
+output: html_document
+---
+   
+   
+## Tree assignements example 
+
+Suppose we have a matrix (an adjacency matrix) with the number of tree genotypes resulting assigned to different populations within a region (e.g., a metapopulation). This plots the network of tree assignements so that we can better assess the connectivity patterns among them.   
+   
+      
+#### Data input
+
+We use an adjacency matrix among 11 populations/stands obtained from immigrant/emigrant Bayesian estimates obtained with BayesAss (Rannala and Mountain 1997). Other network reprersentations of population connectivity can be obtained with the `gstudio` package (see Dyer and Nason 2004).
+
+In this adjacency matrix `OUT`represents the emigrant/immigrant genotypes to/from populations outside the area:    
+
+```{r matrix}
+require(igraph) # This loads the igraph package
+
+# Direct input of adjacency matrix
+#
+# From: ->To:   | A  | B  | C  | D  | OUT
+# --------------|----|----|----|----|----
+# A             |110 |  0 | 4  | 0  | 7
+# B             |  3 |  4 | 0  | 0  | 7
+# C             | 29 | 15 | 10 | 18 | 3
+# D             | 33 |  0 | 1  | 0  | 0
+# OUT           |  4 |  5 | 2  | 1  | 16
+
+myobject = data.frame(matrix( 
+    c(110, 0, 4, 0, 7,
+      3, 4, 0, 0, 7,
+      29, 15, 10, 18, 3,
+      33, 0, 1, 0, 0,
+      4, 5, 2, 1, 16),  
+    nrow=5,              
+    ncol=5,              
+    byrow = TRUE))      
+colnames(myobject)<-row.names(myobject)<- c("A","B","C","D","OUT")
+```
+   
+   
+Note that it is a square, asymmetric matrix, so that entries represent the number of immigrants from `row`population to `column`population. The diagonal cells are the number of genotypes actually in population `i`, inferred to come from that same population (i.e., originating from local, _in situ_ dispersal events).  
+  
+  
+#### Plotting the network
+
+```{r plot_network, fig.height= 8, fig.width= 6}
+m= as.matrix(myobject)              # coerces the data set as a matrix
+g= graph.adjacency(m, mode="directed", 
+                   weighted=T, diag=T)        # this will create
+                                              # an 'igraph object'
+# Plotting the directed adjacency matrix.
+plot.igraph(g, vertex.label= V(g)$name, 
+            layout=layout.fruchterman.reingold,
+            vertex.label.color="black",
+            vertex.label.cex=0.8,
+        	edge.color="black",
+			edge.width=E(g)$weight/10,
+			edge.arrow.size=0.8,
+			edge.curved=TRUE)
+```
+
+
+#### References
+
+1. Rannala, B. & Mountain, J. (1997). Detecting immigration by using multilocus genotypes. _Proceed. Natl. Acad. Sci. USA_, **94**: 9197–9201.
+
+2. Dyer, R.J. & Nason, J.D. (2004). Population Graphs: the graph theoretic shape of genetic structure. _Molecular Ecology_, **13**: 1713–1727.
+    
+----------------------------------
+```{r}
+sessionInfo()
+```
+
+----------------------------------
