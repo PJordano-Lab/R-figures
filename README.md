@@ -1,6 +1,7 @@
 -   General stats
 -   Multipanel plots
     -   ggplot slopegraph multipanel
+-   Multivariate
 -   Time series
 -   Spatial / Maps
     -   Topographic map
@@ -9,7 +10,7 @@
     -   Assignements network
 -   Licence:
 
-This repository intends to be a catalog of figures with the associated R code we used to produce them. Scroll down to browse the available figures. Clicking on any of them will take you to the source code used to produce it.
+This repository intends to be a catalog of figures made in [our group](http://ebd10.ebd.csic.es/ebd10/Home.html) with the associated R code used to produce them. Scroll down to browse the available figures. Clicking on any of them will take you to the source code used to produce it. See [here](https://github.com/PJordano-Lab/R-figures/blob/master/contributing.md) for information on how to contribute new figures and code.
 
 General stats
 -------------
@@ -19,7 +20,10 @@ Multipanel plots
 
 #### ggplot slopegraph multipanel
 
-[![](figures/slopegraph_multipanel.png)](http://github.com/Pakillo/R-figures/blob/master/Multipanel/slopegraph_multipanel.Rmd)
+[![](figures/slopegraph_multipanel.png)](http://htmlpreview.github.io/?https://raw.github.com/PJordano-Lab/R-figures/blob/master/Multipanel/slopegraph_multipanel.html)
+
+Multivariate
+------------
 
 Time series
 -----------
@@ -29,14 +33,16 @@ Spatial / Maps
 
 #### Topographic map
 
-[![](figures/topomap.png)](http://github.com/Pakillo/R-figures/blob/master/Spatial/topomap.Rmd)
+[![](figures/topomap.png)](http://htmlpreview.github.io/?https://raw.github.com/PJordano-Lab/R-figures/blob/master/Spatial/topomap.html)
 
 Networks
 --------
 
 #### Plotting effectiveness landscapes
 
-[![](figures/effectiveness_plot.png)](http://github.com/Pakillo/R-figures/blob/master/Networks/effectiveness.Rmd)
+[![](figures/effectiveness.png)](http://htmlpreview.github.io/?https://raw.github.com/PJordano-Lab/R-figures/blob/master/Networks/effectiveness.html)
+
+More information on effectiveness landscapes is in [Pedro Jordano Lab Pages @GitHub](<http://pedroj.github.io>).
 
 #### Assignements network
 
