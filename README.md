@@ -46,7 +46,7 @@ More information on effectiveness landscapes is in [Pedro Jordano Lab Pages @Git
 
 #### Assignements network
 
-[![](figures/assig_network.png)](http://github.com/Pakillo/R-figures/blob/master/Networks/assig_network.Rmd)
+[![](figures/assig_network.png)](http://htmlpreview.github.io/?https://raw.github.com/PJordano-Lab/R-figures/blob/master/Networks/assig_network.html)
 
 Licence:
 --------
