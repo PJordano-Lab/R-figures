@@ -15,7 +15,7 @@ Suppose we have a matrix (an adjacency matrix) with the number of tree genotypes
 
 We use an adjacency matrix among 11 populations/stands obtained from immigrant/emigrant Bayesian estimates obtained with BayesAss (Rannala and Mountain 1997). Other network reprersentations of population connectivity can be obtained with the `gstudio` package (see Dyer and Nason 2004).
 
-In this adjacency matrix `OUT`represents the emigrant/immigrant genotypes to/from populations outside the area:    
+In this adjacency matrix we coded the number of immigrant/emigrant genotypes for tree populations `A`, `B`, `C`, and `D`, located within a given area. `OUT` represents the emigrant/immigrant genotypes to/from populations outside the area:    
 
 ```{r matrix}
 require(igraph) # This loads the igraph package
