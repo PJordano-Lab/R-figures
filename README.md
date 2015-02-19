@@ -1,5 +1,6 @@
 -   CONTRIBUTING
 -   General stats
+    -   Sankey diagram for demographic transitions
 -   Multipanel plots
     -   ggplot slopegraph multipanel
 -   Multivariate
@@ -19,6 +20,10 @@ See [here](https://github.com/PJordano-Lab/R-figures/blob/master/contributing.md
 
 General stats
 -------------
+
+#### Sankey diagram for demographic transitions
+
+[![](figures/sankey.png)](http://htmlpreview.github.io/?https://raw.github.com/PJordano-Lab/R-figures/blob/master/General/sankey.html)
 
 Multipanel plots
 ----------------

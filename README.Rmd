@@ -40,8 +40,10 @@ fig_insert <- function(theme, figname){
 
 ## General stats
 
-
-
+#### Sankey diagram for demographic transitions
+```{r}
+fig_insert("General", "sankey")
+```
 
 
 
