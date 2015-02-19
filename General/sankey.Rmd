@@ -22,7 +22,7 @@ source(file)
 
 ```
 
-This is a description of the function, with raw code [available here]():
+This is a description of the function, with raw code [available here](https://gist.github.com/pedroj/7e086d4478bac58cb9c9/raw/646eeb2540654ccdb4178776adc259b0a41c3b8b/mySankey.R):
 
 ```{r sankey_function, echo=T, eval=FALSE}
 function(inputs, losses, unit, labels, format="plot"){
