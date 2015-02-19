@@ -13,7 +13,7 @@ Below is the code for the `SankeyR` function. You can source the code directly w
 
 ```{r sourcing, echo=TRUE, eval=TRUE}
 require(downloader)
-#
+
 # Sourcing the effectiveness function code from GitHub.
 link = "https://gist.github.com/pedroj/7e086d4478bac58cb9c9/raw/646eeb2540654ccdb4178776adc259b0a41c3b8b/mySankey.R"
 file = "mySankey.R"
