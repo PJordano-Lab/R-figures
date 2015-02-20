@@ -11,7 +11,7 @@ output: html_document
 
 Below is the code for the `SankeyR` function. You can source the code directly with:
 
-```{r sourcing, echo=TRUE, eval=TRUE}
+```{r sourcing, echo=TRUE, eval=TRUE, warning=FALSE, message=FALSE}
 require(downloader)
 
 # Sourcing the effectiveness function code from GitHub.   
