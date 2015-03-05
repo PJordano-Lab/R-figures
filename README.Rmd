@@ -109,7 +109,7 @@ fig_insert("Networks", "assig_network")
 ```
 
 
-#### Chromosome Network
+#### Gene Flow
 
 ```{r}
 fig_insert("Networks", "GeneFlow") 
