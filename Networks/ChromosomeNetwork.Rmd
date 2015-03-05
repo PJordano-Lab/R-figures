@@ -1,0 +1,62 @@
+---
+title: "ChromosomeNetwork"
+author: "amesclir"
+date: "03/03/2015"
+output: html_document
+---
+Getting the package igraph.
+```{r}
+require(igraph)
+```
+
+Reading the data set.
+
+```{r}
+mydata <- read.csv("ChromosomeNetwork.csv")
+mydata
+```
+
+Getting network igraph format and plottig the first graph.
+Note: By doing this log(E(g)$GR+10)), the conectiones between circles look clearer.
+
+```{r}
+g<-graph.data.frame(mydata, directed=F)
+g
+V(g)
+E(g)
+E(g)$GR
+V(g)$label.cex = 0.3
+plot(g, layout = layout.auto, edge.width=(E(g)$GR)/10)
+
+```
+
+Now we are going to try to put the chromosome number information.
+1. Putting chromosome number information in the vertex (it is not really necessary right now)
+2. Putting gray scale in the vertex
+
+```{r}
+g2 <- g
+V(g2)$X2n <- c(68, 66, 66, 66, 65, 68, 62, 66, 66, 66, 68, 66, 67, 64, 64, 62, 67, 66, 64, 65, 67)
+V(g2)$color <- c("white", "gray60", "gray60","gray60","gray40","gray80","black","gray60","gray60","gray60", "white", "gray60", "gray80", "gray20","gray20","black", "gray80","gray60","gray20","gray40","gray80")   
+V(g2)$label.cex = 0.3
+plot(g2, layout = layout.auto, edge.width=(E(g)$GR)/10)
+legend("bottomright", c("62","64","65", "66", "67", "68"),pch=c(16,16,16,16,16,1),col=c("black", "gray20", "gray40", "gray60", "gray80", "black"),cex=0.7)
+
+```
+
+Now the chromosome number in the vertices.
+
+```{r}
+g3 <- g
+V(g3)$name <- as.character(V(g2)$X2n)
+V(g3)$color <- rep("white", 21)
+V(g3)$label.cex = 0.5
+plot(g3, edge.width=(E(g)$GR)/10)
+
+```
+
+Final important chunk
+```{r}
+sessionInfo()
+```
+
