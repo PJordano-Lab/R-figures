@@ -1,5 +1,5 @@
 ---
-title: "ChromosomeNetwork"
+title: "Gene Flow"
 author: "amesclir"
 date: "03/03/2015"
 output: html_document
