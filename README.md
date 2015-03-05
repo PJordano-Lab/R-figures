@@ -1,23 +1,26 @@
--   CONTRIBUTING
--   General stats
-    -   Sankey diagram for demographic transitions
--   Multipanel plots
-    -   ggplot slopegraph multipanel
--   Multivariate
--   Time series
--   Spatial / Maps
-    -   Topographic map
--   Networks
-    -   Plotting effectiveness landscapes
-    -   Assignements network
-    -   Gene Flow
--   Licence
+-   FIGURE THEMES
+    -   General stats
+        -   Sankey diagram for demographic transitions
+    -   Multipanel plots
+        -   ggplot slopegraph multipanel
+    -   Multivariate
+    -   Time series
+    -   Spatial / Maps
+        -   Topographic map
+    -   Networks
+        -   Plotting effectiveness landscapes
+        -   Assignements network
+        -   Gene Flow
+    -   Licence
 
 This repository intends to be a catalog of figures made in [our group](http://ebd10.ebd.csic.es/ebd10/Home.html) with the associated R code used to produce them. Scroll down to browse the available figures. Clicking on any of them will take you to the source code used to produce it.
 
-###### CONTRIBUTING
+**CONTRIBUTING**
 
 See [here](https://github.com/PJordano-Lab/R-figures/blob/master/contributing.md) for information on how to contribute new figures and code.
+
+FIGURE THEMES
+=============
 
 General stats
 -------------
