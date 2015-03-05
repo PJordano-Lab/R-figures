@@ -61,7 +61,7 @@ More information on effectiveness landscapes is in [Pedro Jordano Lab Pages @Git
 
 #### Chromosome Network
 
-[![](figures/ChromosomeNetwork1.png)](http://htmlpreview.github.io/?https://raw.github.com/PJordano-Lab/R-figures/blob/master/Networks/ChromosomeNetwork1.html)
+[![](figures/GeneFlow.png)](http://htmlpreview.github.io/?https://raw.github.com/PJordano-Lab/R-figures/blob/master/Networks/GeneFlow.html)
 
 Licence
 -------

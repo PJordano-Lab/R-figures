@@ -112,7 +112,7 @@ fig_insert("Networks", "assig_network")
 #### Chromosome Network
 
 ```{r}
-fig_insert("Networks", "ChromosomeNetwork1") 
+fig_insert("Networks", "GeneFlow") 
 ```
 
 Licence
