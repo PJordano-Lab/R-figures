@@ -10,7 +10,7 @@
 -   Networks
     -   Plotting effectiveness landscapes
     -   Assignements network
-    -   Chromosome Network
+    -   Gene Flow
 -   Licence
 
 This repository intends to be a catalog of figures made in [our group](http://ebd10.ebd.csic.es/ebd10/Home.html) with the associated R code used to produce them. Scroll down to browse the available figures. Clicking on any of them will take you to the source code used to produce it.
@@ -59,7 +59,7 @@ More information on effectiveness landscapes is in [Pedro Jordano Lab Pages @Git
 
 [![](figures/assig_network.png)](http://htmlpreview.github.io/?https://raw.github.com/PJordano-Lab/R-figures/blob/master/Networks/assig_network.html)
 
-#### Chromosome Network
+#### Gene Flow
 
 [![](figures/GeneFlow.png)](http://htmlpreview.github.io/?https://raw.github.com/PJordano-Lab/R-figures/blob/master/Networks/GeneFlow.html)
 
