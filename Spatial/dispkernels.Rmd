@@ -18,23 +18,22 @@ The function raw code is [available here](https://github.com/pedroj/dispkernels/
 # Sourcing the kernel function code from GitHub.
 require(downloader)
 link = "https://raw.githubusercontent.com/pedroj/dispkernels/master/functions/mykernel.R"
-file = "./functions/mykernel.R"
+file = "./mykernel.R"
 if(!file.exists(file)) download(link, file, mode = "wb")
 source(file)
 
 ddTF<- rweibull(1000, shape= 1, scale = 3.5) # Weibull distrib.
-ddGC<- rweibull(1000, shape= 0.7, scale = 3.0) # Weibull distrib.
+ddGC<- as.data.frame(rweibull(1000, shape= 0.7, scale = 3.0)) # Weibull distrib.
 
 mykernel(ddTF, bw= 0.5, h= 0.25) # Extract the distances vector
 
 # An example with ggplot2
 # Plot randomized kernel with specific mean and SD values.
 #
-
-ggplot(mydd, aes(x=ddGC)) +
+ggplot(ddGC, aes(x=ddGC[,1])) +
     theme_bw() +
     geom_histogram(aes(y = ..density..), 
-                   binwidth=density(mydd$ddGC)$bw,
+                   binwidth=density(ddGC[,1])$bw,
                    fill="blue", alpha = 0.5) +
     geom_density(fill="red", alpha = 0.2) +
 #    theme_bw() +
@@ -42,6 +41,8 @@ ggplot(mydd, aes(x=ddGC)) +
     xlab('Distance (m)') +
     ylab('Probability')
 
+# Cleanup
+file.remove("./Spatial/mykernel.R")
 ```
 
 ----------------------------------
