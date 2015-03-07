@@ -1,0 +1,52 @@
+---
+title: "Dispersal kernels"
+author: "Pedro Jordano"
+date: "febrero 19, 2015"
+output: html_document
+---
+
+### Code for plotting dispersal kernels
+
+Dispersal kernels depict frequency distributions of dispersal distance, the Euclidean distance between ‘start’ and ‘end’ points of a dispersal event.  
+
+The function raw code is [available here](https://github.com/pedroj/dispkernels/raw/master/functions/mykernel.R).   
+   
+
+### Example
+
+```{r example, message=FALSE, warning=FALSE, fig.height= 6,fig.width=8}
+# Sourcing the kernel function code from GitHub.
+require(downloader)
+link = "https://raw.githubusercontent.com/pedroj/dispkernels/master/functions/mykernel.R"
+file = "./functions/mykernel.R"
+if(!file.exists(file)) download(link, file, mode = "wb")
+source(file)
+
+ddTF<- rweibull(1000, shape= 1, scale = 3.5) # Weibull distrib.
+ddGC<- rweibull(1000, shape= 0.7, scale = 3.0) # Weibull distrib.
+
+mykernel(ddTF, bw= 0.5, h= 0.25) # Extract the distances vector
+
+# An example with ggplot2
+# Plot randomized kernel with specific mean and SD values.
+#
+
+ggplot(mydd, aes(x=ddGC)) +
+    theme_bw() +
+    geom_histogram(aes(y = ..density..), 
+                   binwidth=density(mydd$ddGC)$bw,
+                   fill="blue", alpha = 0.5) +
+    geom_density(fill="red", alpha = 0.2) +
+#    theme_bw() +
+    geom_rug(sides="b", color="red") +
+    xlab('Distance (m)') +
+    ylab('Probability')
+
+```
+
+----------------------------------
+```{r}
+sessionInfo()
+```
+
+----------------------------------
