@@ -9,8 +9,19 @@ output: html_document
 
 Dispersal kernels depict frequency distributions of dispersal distance, the Euclidean distance between ‘start’ and ‘end’ points of a dispersal event.  
 
-The function raw code is [available here](https://github.com/pedroj/dispkernels/raw/master/functions/mykernel.R).   
+The function raw code is [available here](https://github.com/pedroj/dispkernels/raw/master/functions/mykernel.R).    
    
+The functions plots the `pdf` for the kernel and `n= 100` bootstrapped distributions by randomply resampling the distance vector.   
+
+Input in function call is the data vector of distances and an upper limit for estimating the kernel.   
+Possible startup values:    
+`dd`: data vector of distances.    
+`up`: upper distance limit for estimating the kernel.    
+`prob`: probability Y axis [TRUE].     
+`bw`: the smoothing bandwidth to be used for the kernel envelope.     
+`h`: the bin width.    
+
+
 
 ### Example
 
