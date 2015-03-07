@@ -7,7 +7,7 @@
     -   Time series
     -   Spatial / Maps
         -   Topographic map
-        -   Ploting dispersal kernels
+        -   Plotting dispersal kernels
     -   Networks
         -   Plotting effectiveness landscapes
         -   Assignements network
@@ -50,7 +50,7 @@ Spatial / Maps
 
 [![](figures/topomap.png)](http://htmlpreview.github.io/?https://raw.github.com/PJordano-Lab/R-figures/blob/master/Spatial/topomap.html)
 
-#### Ploting dispersal kernels
+#### Plotting dispersal kernels
 
 [![](figures/dispkernels.png)](http://htmlpreview.github.io/?https://raw.github.com/PJordano-Lab/R-figures/blob/master/Spatial/dispkernels.html)
 

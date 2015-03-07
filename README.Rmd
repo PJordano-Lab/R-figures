@@ -84,7 +84,7 @@ fig_insert("Spatial", "topomap")
 ```
 
 
-#### Ploting dispersal kernels  
+#### Plotting dispersal kernels  
 ```{r}
 fig_insert("Spatial", "dispkernels")
 ```
