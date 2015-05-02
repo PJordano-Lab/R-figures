@@ -1,0 +1,30 @@
+---
+title: "Expected vs Empirical distribution of seed dispersal distances"
+author: "Nestor Perez-Mendez"
+date: "2 de mayo de 2015"
+output: html_document
+---
+
+
+```{r Libraries}
+library(ggplot2)
+library(reshape)
+data.plot <- read.table("~/Documents/PhD/Working/Chapter_Seed_Kernels/Analysis/data.plot", dec=",",header=T)
+data.plot
+```
+
+
+```{r}
+ggplot(melt(data.plot), aes(value, fill = variable)) +
+geom_histogram(position = "dodge", aes(y= ..density..),binwidth=5)+
+theme(panel.grid=element_blank(),
+panel.background=element_blank(),
+axis.line=element_line(),
+panel.border=element_rect(fill=NA))+
+scale_fill_grey(name="Seed dispersal distances",
+labels=c("Expected", "Observed"))+
+labs(x="Distance (m)", y= "Probability",size=12)
+```
+```{r}
+sessionInfo()
+```
