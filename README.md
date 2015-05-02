@@ -8,7 +8,7 @@
     -   Spatial / Maps
         -   Topographic map
         -   Plotting dispersal kernels
-        -   Ploting expected vs empirical distances
+        -   Plotting expected vs empirical distances
     -   Networks
         -   Plotting effectiveness landscapes
         -   Assignements network
@@ -55,7 +55,7 @@ Spatial / Maps
 
 [![](figures/dispkernels.png)](http://htmlpreview.github.io/?https://raw.github.com/PJordano-Lab/R-figures/blob/master/Spatial/dispkernels.html)
 
-#### Ploting expected vs empirical distances
+#### Plotting expected vs empirical distances
 
 [![](figures/ExpectedvsEmpirical_kernels.png)](http://htmlpreview.github.io/?https://raw.github.com/PJordano-Lab/R-figures/blob/master/Spatial/ExpectedvsEmpirical_kernels.html)
 
