@@ -89,7 +89,7 @@ fig_insert("Spatial", "topomap")
 fig_insert("Spatial", "dispkernels")
 ```
 
-#### Ploting expected vs empirical distances
+#### Plotting expected vs empirical distances
 ```{r}
 fig_insert("Spatial","ExpectedvsEmpirical_kernels")
 ```
