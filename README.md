@@ -1,19 +1,19 @@
--   FIGURE THEMES
-    -   General stats
-        -   Sankey diagram for demographic transitions
-    -   Multipanel plots
-        -   ggplot slopegraph multipanel
-    -   Multivariate
-    -   Time series
-    -   Spatial / Maps
-        -   Topographic map
-        -   Plotting dispersal kernels
-        -   Plotting expected vs empirical distances
-    -   Networks
-        -   Plotting effectiveness landscapes
-        -   Assignements network
-        -   Gene Flow
-    -   Licence
+-   [FIGURE THEMES](#figure-themes)
+    -   [General stats](#general-stats)
+        -   [Sankey diagram for demographic transitions](#sankey-diagram-for-demographic-transitions)
+    -   [Multipanel plots](#multipanel-plots)
+        -   [ggplot slopegraph multipanel](#ggplot-slopegraph-multipanel)
+    -   [Multivariate](#multivariate)
+    -   [Time series](#time-series)
+    -   [Spatial / Maps](#spatial-/-maps)
+        -   [Topographic map](#topographic-map)
+        -   [Plotting dispersal kernels](#plotting-dispersal-kernels)
+        -   [Plotting expected vs empirical distances](#plotting-expected-vs-empirical-distances)
+    -   [Networks](#networks)
+        -   [Plotting effectiveness landscapes](#plotting-effectiveness-landscapes)
+        -   [Assignements network](#assignements-network)
+        -   [Gene Flow](#gene-flow)
+    -   [Licence](#licence)
 
 This repository intends to be a catalog of figures made in [our group](http://ebd10.ebd.csic.es/ebd10/Home.html) with the associated R code used to produce them. Scroll down to browse the available figures. Clicking on any of them will take you to the source code used to produce it.
 
