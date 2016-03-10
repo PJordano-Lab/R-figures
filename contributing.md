@@ -12,7 +12,7 @@ You can just browse the figures available [here](https://github.com/PJordano-Lab
 
 3. Knit your Rmd. This will generate an HTML output file and one (or more) figures in the `figures` folder.
 
-4. Open `README.Rmd` and include your figure in the appropriate section (e.g. Spatial, Networks, etc). Just insert a chunk wherever you want the figure to appear, like in this example:
+4. Open `README.Rmd` to include your figure in the appropriate section (e.g. Spatial, Networks, etc). Just insert a chunk wherever you want the figure to appear, like in this example:
 
 ```{r}     
 insert("My figure", "Networks/bipartite_network.Rmd")     
