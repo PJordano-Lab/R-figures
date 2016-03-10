@@ -43,7 +43,7 @@ General stats
 
 #### Sankey diagram for demographic transitions
 
-[![](figures/sankey.png)](http://htmlpreview.github.io/?https://raw.github.com/PJordano-Lab/R-figures/blob/master/General/sankey.html)
+[<img src="figures/sankey.png" width="600">](http://htmlpreview.github.io/?https://raw.github.com/PJordano-Lab/R-figures/blob/master/General/sankey.html)
 
 Multipanel plots
 ----------------
