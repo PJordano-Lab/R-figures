@@ -5,6 +5,19 @@ date: "febrero 19, 2015"
 output: html_document
 ---
 
+
+[**Jordano's lab R Figures Catalog**](https://github.com/PJordano-Lab/R-figures)
+
+```{r setup, include=FALSE}
+# Do not remove this chunk #
+library(knitr)
+opts_chunk$set(fig.path = gsub("\\.Rmd", "", paste0("../figures/", current_input(), "-")),
+               fig.align='center')
+
+```
+
+
+
 ### Code for plotting a Sankey diagram.
 
 [Sankey diagrams](http://bost.ocks.org/mike/sankey/) illustrate fluxes. They are useful to depict losses of, say, seeds and seedlings during the recruitment cycle of plants. A useful package for Sakey diagrams in `R` is `riverplot`.
@@ -85,7 +98,7 @@ function(inputs, losses, unit, labels, format="plot"){
 
 ### Example
 
-```{r example, message=FALSE, warning=FALSE, fig.height= 6,fig.width=8}
+```{r plot, message=FALSE, warning=FALSE, fig.height= 6,fig.width=8}
 require(downloader)
 #
 # PJ example. Based on a dataset of Prunus mahaleb frugivores.

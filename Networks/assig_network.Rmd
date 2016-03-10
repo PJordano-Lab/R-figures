@@ -5,7 +5,17 @@ date: "enero 19, 2015"
 output: html_document
 ---
    
-   
+[**Jordano's lab R Figures Catalog**](https://github.com/PJordano-Lab/R-figures)
+
+```{r setup, include=FALSE}
+# Do not remove this chunk #
+library(knitr)
+opts_chunk$set(fig.path = gsub("\\.Rmd", "", paste0("../figures/", current_input(), "-")),
+               fig.align='center')
+
+```
+
+
 ## Tree assignements example 
 
 Suppose we have a matrix (an adjacency matrix) with the number of tree genotypes resulting assigned to different populations within a region (e.g., a metapopulation). This plots the network of tree assignements so that we can better assess the connectivity patterns among them.   

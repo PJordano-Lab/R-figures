@@ -5,6 +5,18 @@ date: "enero 28, 2015"
 output: html_document
 ---
 
+[**Jordano's lab R Figures Catalog**](https://github.com/PJordano-Lab/R-figures)
+
+```{r setup, include=FALSE}
+# Do not remove this chunk #
+library(knitr)
+opts_chunk$set(fig.path = gsub("\\.Rmd", "", paste0("../figures/", current_input(), "-")),
+               fig.align='center')
+
+```
+
+
+
 ### Code for plotting the effectiveness landscape of mutualisms adding isolines of equal effectiveness values.
 
 Effectiveness landscapes are the two-dimensional representation of the possible combinations of the quantity and the quality of mutualistic services (seed dispersal, pollination) and with elevational contours representing isoclines of effectiveness. These representations can be 2D bivariate plots of multiplicative effects of any of the seed dispersal (SDE) or pollination (PE) effectiveness components.  

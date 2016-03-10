@@ -5,6 +5,18 @@ date: "Saturday, January 24, 2015"
 output: html_document
 ---
 
+[**Jordano's lab R Figures Catalog**](https://github.com/PJordano-Lab/R-figures)
+
+```{r setup, include=FALSE}
+# Do not remove this chunk #
+library(knitr)
+opts_chunk$set(fig.path = gsub("\\.Rmd", "", paste0("../figures/", current_input(), "-")),
+               fig.align='center')
+
+```
+
+
+
 1. Load packages
 ```{r message=FALSE}
 library(dismo)
@@ -13,7 +25,7 @@ library(dismo)
 
 2. Get elevation data from the internet for specified coordinates
 ```{r message=FALSE}
-elev <- getData("SRTM", download=T, lon=-76.6, lat=18.1)
+elev <- getData("SRTM", download=TRUE, lon=-76.6, lat=18.1)
 ```
 
 
@@ -44,7 +56,7 @@ hill <- hillShade(slope, aspect, 40, 180)
 
  
 6. Plot map
-```{r}
+```{r plot}
 plot(hill, col = grey(0:100/100), legend = FALSE, interpolate=T,
 xlim=ext2[1:2], ylim=ext2[3:4],
 axes=F, box=F)

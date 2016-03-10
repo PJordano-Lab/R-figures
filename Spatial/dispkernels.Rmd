@@ -5,6 +5,18 @@ date: "febrero 19, 2015"
 output: html_document
 ---
 
+
+[**Jordano's lab R Figures Catalog**](https://github.com/PJordano-Lab/R-figures)
+
+```{r setup, include=FALSE}
+# Do not remove this chunk #
+library(knitr)
+opts_chunk$set(fig.path = gsub("\\.Rmd", "", paste0("../figures/", current_input(), "-")),
+               fig.align='center')
+
+```
+
+
 ### Code for plotting dispersal kernels
 
 Dispersal kernels depict frequency distributions of dispersal distance, the Euclidean distance between ‘start’ and ‘end’ points of a dispersal event.  
@@ -25,7 +37,7 @@ Possible startup values:
 
 ### Example
 
-```{r example, message=FALSE, warning=FALSE, fig.height= 6,fig.width=8}
+```{r plot, message=FALSE, warning=FALSE, fig.height= 6,fig.width=8}
 # Sourcing the kernel function code from GitHub.
 require(downloader)
 link = "https://raw.githubusercontent.com/pedroj/dispkernels/master/functions/mykernel.R"
@@ -41,6 +53,8 @@ mykernel(ddTF, bw= 0.5, h= 0.25) # Extract the distances vector
 # An example with ggplot2
 # Plot randomized kernel with specific mean and SD values.
 #
+library(ggplot2)
+
 ggplot(ddGC, aes(x=ddGC[,1])) +
     theme_bw() +
     geom_histogram(aes(y = ..density..), 
