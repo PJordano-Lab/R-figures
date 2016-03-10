@@ -5,13 +5,13 @@
         -   [ggplot slopegraph multipanel](#ggplot-slopegraph-multipanel)
     -   [Multivariate](#multivariate)
     -   [Time series](#time-series)
-    -   [Spatial / Maps](#spatial-/-maps)
+    -   [Spatial / Maps](#spatial-maps)
         -   [Topographic map](#topographic-map)
         -   [Plotting dispersal kernels](#plotting-dispersal-kernels)
         -   [Plotting expected vs empirical distances](#plotting-expected-vs-empirical-distances)
     -   [Networks](#networks)
         -   [Plotting effectiveness landscapes](#plotting-effectiveness-landscapes)
-        -   [Assignements network](#assignements-network)
+        -   [Assignments network](#assignments-network)
         -   [Gene Flow](#gene-flow)
     -   [Licence](#licence)
 
@@ -20,6 +20,20 @@ This repository intends to be a catalog of figures made in [our group](http://eb
 **CONTRIBUTING**
 
 See [here](https://github.com/PJordano-Lab/R-figures/blob/master/contributing.md) for information on how to contribute new figures and code.
+
+**OTHER REPOS WITH R CODE TO PRODUCE FIGURES**
+
+-   [R graph catalog](http://shiny.stat.ubc.ca/r-graph-catalog/)
+
+-   [The R graph gallery](http://www.r-graph-gallery.com/)
+
+-   [R graph gallery](http://rgraphgallery.blogspot.com/)
+
+-   [Cookbook for R: Graphs](http://www.cookbook-r.com/Graphs/)
+
+-   [A compendium of clean graphs in R](http://shinyapps.org/apps/RGraphCompendium/index.php)
+
+-   [Graphical data analysis with R](http://www.gradaanwr.net/)
 
 FIGURE THEMES
 =============
@@ -66,9 +80,9 @@ Networks
 
 [![](figures/effectiveness.png)](http://htmlpreview.github.io/?https://raw.github.com/PJordano-Lab/R-figures/blob/master/Networks/effectiveness.html)
 
-More information on effectiveness landscapes is in [Pedro Jordano Lab Pages @GitHub](<http://pedroj.github.io>).
+More information on effectiveness landscapes is in \[Pedro Jordano Lab Pages @GitHub\](<http://pedroj.github.io>).
 
-#### Assignements network
+#### Assignments network
 
 [![](figures/assig_network.png)](http://htmlpreview.github.io/?https://raw.github.com/PJordano-Lab/R-figures/blob/master/Networks/assig_network.html)
 

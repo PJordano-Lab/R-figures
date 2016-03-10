@@ -13,6 +13,22 @@ This repository intends to be a catalog of figures made in [our group](http://eb
 **CONTRIBUTING**
 
 See [here](https://github.com/PJordano-Lab/R-figures/blob/master/contributing.md) for information on how to contribute new figures and code. 
+
+
+**OTHER REPOS WITH R CODE TO PRODUCE FIGURES**
+
+- [R graph catalog](http://shiny.stat.ubc.ca/r-graph-catalog/)
+
+- [The R graph gallery](http://www.r-graph-gallery.com/)
+
+- [R graph gallery](http://rgraphgallery.blogspot.com/)
+
+- [Cookbook for R: Graphs](http://www.cookbook-r.com/Graphs/)
+
+- [A compendium of clean graphs in R](http://shinyapps.org/apps/RGraphCompendium/index.php)
+
+- [Graphical data analysis with R](http://www.gradaanwr.net/)
+
   
 
 
@@ -109,7 +125,7 @@ More information on effectiveness landscapes is in [Pedro Jordano Lab Pages @Git
 
 
 
-#### Assignements network
+#### Assignments network
 
 ```{r}
 fig_insert("Networks", "assig_network")
