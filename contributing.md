@@ -8,22 +8,21 @@ You can just browse the figures available [here](https://github.com/PJordano-Lab
 
 1. **Clone** or **Pull** the latest version of this repository from GitHub.
 
-2. Place a copy of the Rmarkdown document and the resulting HTML file (after knitting) in the appropriate folder (e.g. Spatial, Networks...). If needed, include also a minimal dataset to make the example reproducible (e.g. `topomap_data.rda` to accompany `topomap.Rmd` and `topomap.html`).
-**Important**: always include a final chunk in the Rmarkdown file to provide session info, like this: `sessionInfo()`.
+2. Open and fill in `Rmd_template.Rmd`. Save it in the appropriate folder (e.g. Spatial, Networks...) with an informative name (e.g. `bipartite_network.Rmd`). 
 
-3. Put a small-size copy (400 pixels wide) of your resulting figure (e.g. `topomap.png`) in the `figures` folder of the main repository. **Important**: the figure file (.png) must have the same name as the Rmarkdown and HTML file associated to it.
+3. Knit your Rmd. This will generate an HTML output file and one (or more) figures in the `figures` folder.
 
-4. Open `README.Rmd` and include your figure in the appropriate section: just write a short caption (4 hash symbols (####) followed by the figure title) and then include a knitr chunk like in this example:
+4. Open `README.Rmd` and include your figure in the appropriate section (e.g. Spatial, Networks, etc). Just insert a chunk wherever you want the figure to appear, like in this example:
 
-`#### Topographic map with contour lines`  
-`{r}`   
-`fig_insert("Spatial", "topomap")`  
+```{r}     
+insert("My figure", "Networks/bipartite_network.Rmd")     
+```
 
-where "Spatial" is the general theme of your figure (e.g. Spatial, Networks, etc), and "topomap" is the name of your figure.
+where "My figure" is the title, and the second argument is the path to your Rmd source document. 
     
-5. Knit `README.Rmd` to markdown (`README.md`).
+5. Knit `README.Rmd`. This will generate `README.md`.
     
-6. **Commit** everything (the `Rmd`, `html` and `png` file of your figure, plus `README.Rmd` and `README.md`) and **push**  to the GitHub repository.
+6. **Commit** everything (the `Rmd`, `html` and `png` files, plus `README.Rmd` and `README.md`) and **push**  to the GitHub repository.
 
 Thanks!
 

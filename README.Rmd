@@ -8,6 +8,8 @@ output:
     toc_depth: 5
 ---
 
+# A repository of R graphics with their associated code
+
 This repository intends to be a catalog of figures made in [our group](http://ebd10.ebd.csic.es/ebd10/Home.html) with the associated R code used to produce them. Scroll down to browse the available figures. Clicking on any of them will take you to the source code used to produce it. 
 
 **CONTRIBUTING**
@@ -37,18 +39,24 @@ library(knitr)
 opts_chunk$set(echo = FALSE, comment = NA, results = 'asis')
 ```
 
-```{r fig_insert_function}
-fig_insert <- function(theme, figname){
-  if (missing(theme) | missing(figname)) {
-    cat("You must provide theme (e.g. Spatial, Networks) and figure name (e.g. topomap)")
+
+```{r insert_function}
+insert <- function(title, path2rmd){
+  if (missing(title) | missing(path2rmd)) {
+    cat("You must provide a title and the path to the Rmarkdown source document (e.g. 'Networks/bipartite_network.Rmd')")
     } else {
-      cat("[![](figures/", figname, ".png)]",
-          "(http://htmlpreview.github.io/?https://raw.github.com/PJordano-Lab/R-figures/blob/master/",
-          theme, "/", figname, ".html)",
+      path <- unlist(strsplit(path2rmd, "/"))
+      folder <- path[1]
+      fig <- gsub("\\.Rmd", "", path[2])
+      cat('#### ', title, '\n\n',
+'[![](figures/', fig, '-plot-1.png)]',
+          '(http://htmlpreview.github.io/?https://raw.github.com/PJordano-Lab/R-figures/blob/master/',
+          folder, '/', fig, '.html)',
           sep = "")
       }
   }
 ```
+
 
 
 
@@ -57,19 +65,22 @@ fig_insert <- function(theme, figname){
 
 ## General stats
 
-#### Sankey diagram for demographic transitions
+
 ```{r}
-fig_insert("General", "sankey")
+insert("Sankey diagram for demographic transitions", "General/sankey.Rmd")
 ```
+
+
 
 
 
 ## Multipanel plots 
 
-#### ggplot slopegraph multipanel
+
 ```{r}
-fig_insert("Multipanel", "slopegraph_multipanel")
+insert("ggplot slopegraph multipanel", "Multipanel/slopegraph_multipanel.Rmd")
 ```
+
 
 
 
@@ -94,49 +105,51 @@ fig_insert("Multipanel", "slopegraph_multipanel")
 
 ## Spatial / Maps
 
-#### Topographic map  
+
+
 ```{r}
-fig_insert("Spatial", "topomap")
+insert("Topographic map", "Spatial/topomap.Rmd")
 ```
 
 
-#### Plotting dispersal kernels  
 ```{r}
-fig_insert("Spatial", "dispkernels")
+insert("Plotting dispersal kernels", "Spatial/dispkernels.Rmd")
 ```
 
-#### Plotting expected vs empirical distances
+
 ```{r}
-fig_insert("Spatial","ExpectedvsEmpirical_kernels")
+insert("Plotting expected vs empirical distances", "Spatial/ExpectedvsEmpirical_kernels.Rmd")
 ```
+
+
 
 
 ## Networks
 
-#### Plotting effectiveness landscapes
+
+
 ```{r}
-fig_insert("Networks", "effectiveness")
+insert("Plotting effectiveness landscapes", "Networks/effectiveness.Rmd")
 ```
 
 More information on effectiveness landscapes is in [Pedro Jordano Lab Pages @GitHub](http://pedroj.github.io).
 
 
 
-
-
-
-#### Assignments network
-
 ```{r}
-fig_insert("Networks", "assig_network")
+insert("Assignments network", "Networks/assig_network.Rmd")
 ```
 
 
-#### Gene Flow
-
 ```{r}
-fig_insert("Networks", "GeneFlow") 
+insert("Gene flow", "Networks/GeneFlow.Rmd")
 ```
+
+
+
+
+
+
 
 Licence
 --------
