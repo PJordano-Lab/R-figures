@@ -1,0 +1,49 @@
+---
+title: "Plot title"
+author: "Your name"
+output: html_document
+---
+
+[**Jordano's lab R Figures Catalog**](https://github.com/PJordano-Lab/R-figures)
+
+```{r setup, include=FALSE}
+# Do not remove this chunk #
+library(knitr)
+opts_chunk$set(fig.path = gsub("\\.Rmd", "", paste0("../figures/", current_input(), "-")),
+               fig.align='center', out.width="400px")
+
+```
+
+
+#### Load or create dataset
+
+```{r data}
+# For example:
+# load("dataset.rda")   # include this dataset if possible to make the example reproducible
+# OR
+# dataset <- rnorm(100, 10, 3)
+
+```
+
+
+#### Produce plot
+
+
+```{r plot}
+# Chunk name must be 'plot' - do not change (please)
+
+# plot(dataset)
+
+```
+
+
+
+##### Session info
+
+```{r sessionInfo, echo=FALSE}
+sessionInfo()
+```
+
+
+
+
