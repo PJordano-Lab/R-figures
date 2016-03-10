@@ -131,7 +131,7 @@ effectiveness<- function(q1, q2, group=NA, label= NA, nlines=10,
 
 ### Example
 
-```{r example, message=FALSE, warning=FALSE, fig.height= 6,fig.width=8}
+```{r plot, message=FALSE, warning=FALSE, fig.height= 6,fig.width=8}
 require(downloader)
 #
 # PJ example. Based on a dataset of Prunus mahaleb frugivores.

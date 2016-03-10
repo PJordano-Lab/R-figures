@@ -58,7 +58,7 @@ Note that it is a square, asymmetric matrix, so that entries represent the numbe
   
 #### Plotting the network
 
-```{r plot_network, fig.height= 8, fig.width= 6}
+```{r plot, fig.height= 8, fig.width= 6}
 m= as.matrix(myobject)              # coerces the data set as a matrix
 g= graph.adjacency(m, mode="directed", 
                    weighted=T, diag=T)        # this will create
