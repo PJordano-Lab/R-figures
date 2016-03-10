@@ -41,20 +41,20 @@ opts_chunk$set(echo = FALSE, comment = NA, results = 'asis')
 
 
 ```{r insert_function}
-insert <- function(title, path2rmd){
+insert <- function(title, path2rmd, fig.width = 400, plot.number = 1){
   if (missing(title) | missing(path2rmd)) {
     cat("You must provide a title and the path to the Rmarkdown source document (e.g. 'Networks/bipartite_network.Rmd')")
-    } else {
-      path <- unlist(strsplit(path2rmd, "/"))
-      folder <- path[1]
-      fig <- gsub("\\.Rmd", "", path[2])
-      cat('#### ', title, '\n\n',
-'[![](figures/', fig, '-plot-1.png)]',
-          '(http://htmlpreview.github.io/?https://raw.github.com/PJordano-Lab/R-figures/blob/master/',
-          folder, '/', fig, '.html)',
-          sep = "")
-      }
+  } else {
+    path <- unlist(strsplit(path2rmd, "/"))
+    folder <- path[1]
+    fig <- gsub("\\.Rmd", "", path[2])
+    cat('#### ', title, '\n\n',
+        '[<img src="figures/', fig, '-plot-', plot.number, '.png" width="', fig.width, '">]',
+        '(http://htmlpreview.github.io/?https://raw.github.com/PJordano-Lab/R-figures/blob/master/',
+        folder, '/', fig, '.html)',
+        sep = "")
   }
+}
 ```
 
 

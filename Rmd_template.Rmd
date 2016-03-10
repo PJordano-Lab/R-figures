@@ -11,7 +11,7 @@ output: html_document
 # Do not remove this chunk #
 library(knitr)
 opts_chunk$set(fig.path = gsub("\\.Rmd", "", paste0("../figures/", current_input(), "-")),
-               fig.align='center', fig.width = 4, out.width="700px")
+               fig.align='center')
 
 ```
 
