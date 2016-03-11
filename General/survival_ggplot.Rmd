@@ -1,0 +1,57 @@
+---
+title: "Survival curves (ggplot2)"
+author: "F. Rodriguez-Sanchez"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+[**Jordano's lab R Figures Catalog**](https://github.com/PJordano-Lab/R-figures)
+
+```{r setup, include=FALSE}
+# Do not remove this chunk #
+library(knitr)
+opts_chunk$set(fig.path = gsub("\\.Rmd", "", paste0("../figures/", current_input(), "-")),
+               fig.align='center')
+
+```
+
+
+#### Fit survival curves
+
+```{r data}
+library(survival)
+fit <- survfit(Surv(time, status) ~ sex, data = lung)
+
+```
+
+
+#### Plot survival curves using `survminer` package
+
+
+```{r plot}
+
+library(survminer)
+
+gg <- ggsurvplot(fit, break.time.by = 200, censor = FALSE,
+           xlab = "Time (days)")
+gg <- gg$plot
+
+gg + theme(axis.title.y = element_text(margin = margin(0, 20, 0, 0)))
+
+```
+
+
+Other options are `geom_km` from package `ggkm`, and `autoplot` from package `survMisc`.
+It is also possible to label curves directly with `ggrepel` or `directlabels`.
+
+
+
+##### Session info
+
+```{r sessionInfo, echo=FALSE}
+sessionInfo()
+```
+
+
+
+

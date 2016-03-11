@@ -71,6 +71,10 @@ insert("Sankey diagram for demographic transitions", "General/sankey.Rmd")
 ```
 
 
+```{r}
+insert("Survival curves (ggplot)", "General/survival_ggplot.Rmd")
+```
+
 
 
 

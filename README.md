@@ -2,6 +2,7 @@
 -   [FIGURE THEMES](#figure-themes)
     -   [General stats](#general-stats)
         -   [Sankey diagram for demographic transitions](#sankey-diagram-for-demographic-transitions)
+        -   [Survival curves (ggplot)](#survival-curves-ggplot)
     -   [Multipanel plots](#multipanel-plots)
         -   [ggplot slopegraph multipanel](#ggplot-slopegraph-multipanel)
     -   [Multivariate](#multivariate)
@@ -48,6 +49,10 @@ General stats
 #### Sankey diagram for demographic transitions
 
 [<img src="figures/sankey-plot-1.png" width="400">](http://htmlpreview.github.io/?https://raw.github.com/PJordano-Lab/R-figures/blob/master/General/sankey.html)
+
+#### Survival curves (ggplot)
+
+[<img src="figures/survival_ggplot-plot-1.png" width="400">](http://htmlpreview.github.io/?https://raw.github.com/PJordano-Lab/R-figures/blob/master/General/survival_ggplot.html)
 
 Multipanel plots
 ----------------
